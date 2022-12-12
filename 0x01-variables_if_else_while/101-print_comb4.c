@@ -28,23 +28,24 @@ int main(void)
 		while (d < 10)
 		{
 			c = 0;
-				while (c < 10)
+			while (c < 10)
+			{
+				if (c != d && d != e && e < d && d < c)
 				{
-					if (c != d && d != e && e < d && d < c)
-					{
-						putchar('0' + e);
-						putchar('0' + d);
-						putchar('0' + c);
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
 
-						if (c + d + e != 9 + 8 + 7)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (c + d + e != 9 + 8 + 7)
+					{
+						putchar(',');
+						putchar(' ');
 					}
-					c++;
 				}
-				d++;
+
+				c++;
+			}
+			d++;
 		}
 		e++;
 	}
