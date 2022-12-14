@@ -12,4 +12,4 @@ int add(int, int);
 void print_to_98(int n);
 void num(int r, int n);
 
-#endif
+#endif without #if
