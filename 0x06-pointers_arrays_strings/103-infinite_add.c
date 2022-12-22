@@ -2,9 +2,10 @@
 
 /**
  * rev_string - reverse array
- * @n: integer params
- * Return: 0
+ *  @n: integer params
+ * REturn: 0
  */
+
 void rev_string(char *n)
 {
 	int i = 0;
@@ -16,6 +17,7 @@ void rev_string(char *n)
 		i++;
 	}
 	i--;
+
 	for (j = 0; j < i; j++, i--)
 	{
 		temp = *(n + j);
@@ -58,8 +60,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			val2 = *(n2 + j) - '0';
 		temp_tot = val1 + val2 + overflow;
 		if (temp_tot >= 10)
-			overflow = 1;
-		else
 			overflow = 1;
 		else
 			overflow = 0;
