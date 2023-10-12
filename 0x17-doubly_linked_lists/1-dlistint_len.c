@@ -29,4 +29,3 @@ size_t dlistint_len(const dlistint_t *h)
     /*Return the total number of elements in the list.*/
     return (nodes);
 }
-
